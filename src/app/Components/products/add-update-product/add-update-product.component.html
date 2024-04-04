@@ -1,0 +1,17 @@
+<h1 *ngIf="editFlag" mat-dialog-title>Edit Product</h1>
+<h1 *ngIf="!editFlag" mat-dialog-title>Add New Product</h1>
+<div mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-label>Product Name</mat-label>
+    <input matInput [(ngModel)]="product.productName">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Product Price</mat-label>
+    <input matInput [(ngModel)]="product.productPrice">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button class="cancel-btn" (click)="onCancelClick()">Cancel</button>
+  <button mat-button class="update-btn" *ngIf="editFlag" [mat-dialog-close]="product" cdkFocusInitial>Update</button>
+  <button mat-button class="add-btn" *ngIf="!editFlag" [mat-dialog-close]="product" cdkFocusInitial>Add</button>
+</div>

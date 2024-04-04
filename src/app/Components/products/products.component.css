@@ -1,0 +1,41 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.save-btn {
+  background-color: #2174d3;
+  color: #ffffff;
+  margin: 10px 0px 10px 0px;
+  float: right;
+}
+
+.edit-btn {
+  background-color: #da9631;
+  color: #ffffff;
+  margin: 5px 5px 5px 0px;
+}
+
+.copy-btn {
+  background-color: #4e83d3;
+  color: #ffffff;
+  margin: 5px 0px 5px 0px;
+}
+
+.delete-btn {
+  background-color: #9c1818;
+  color: #ffffff;
+  margin: 5px 5px 5px 0px;
+}

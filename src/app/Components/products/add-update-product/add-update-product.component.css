@@ -1,0 +1,20 @@
+.cancel-btn {
+    background-color: #d82222;
+    color: #ffffff;
+    margin-left: 15px;
+}
+
+.update-btn {
+    background-color: #103f09;
+    color: #ffffff;
+}
+
+.add-btn {
+    background-color: #103f09;
+    color: #ffffff;
+}
+
+mat-form-field {
+    min-width: 258px;
+    margin-right: 5px;
+}

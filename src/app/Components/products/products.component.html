@@ -1,0 +1,19 @@
+<div>
+  <button mat-raised-button class="save-btn" (click)="addProduct()">Add New Product</button>
+  <table>
+    <tr>
+      <th>Product Name</th>
+      <th>Product Price</th>
+      <th>Product Update</th>
+    </tr>
+      <tr *ngFor="let eachProduct of allProducts">
+        <td>{{ eachProduct.productName }}</td>
+        <td>{{ eachProduct.productPrice }}</td>
+        <td>
+          <button  #editBtn mat-button class="edit-btn" (click)="editProduct(eachProduct?.productId)">Edit</button>
+          <button mat-button class="delete-btn" (click)="deleteProduct(eachProduct?.productId)">Delete</button>
+          <button mat-button class="copy-btn" (click)="copyProduct(eachProduct?.productId)">Copy</button>
+        </td>
+      </tr>
+  </table>
+</div>
